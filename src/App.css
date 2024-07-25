@@ -2,37 +2,115 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
+  background-color: white;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+  justify-content: top;
+  font-size: calc(10px + 1vmin);
+  color: black;
+
+  padding: 3rem;
+}
+
+/* BattleScreen CSS */
+.Battle-screen {
+  border-color: black;
+  border-radius: 1rem;
+  border-style: solid;
+  border-width: 0.2rem;
+
+  min-height: 50vh;
+  /* margin: 3rem; */
+  margin-bottom: 3rem;
+  padding: 1rem;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Info-bar {
+  border-color: black;
+  border-radius: 1rem;
+  border-style: solid;
+  border-width: 0.2rem;
+
+  min-height: 20vh;
+  min-width: 100%;
+  /* margin: 2rem; */
+  /* margin-left: 3rem;
+  margin-right: 3rem; */
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  /* padding-left: 2rem;
+  padding-right: 2rem; */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 3rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Move-stat {
+  background-color: lightblue;
+  border-color: rgb(50, 111, 186);
+  border-radius: 1rem;
+  border-style: solid;
+  border-width: 0.3rem;
+
+  min-height: 5vh;
+  min-width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1rem;
+}
+
+.Poke-sprite {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: right;
+  margin-bottom: -3rem;
+}
+
+
+.Battle-log {
+  border-color: black;
+  border-radius: 1rem;
+  border-style: solid;
+  border-width: 0.2rem;
+
+  min-height: 30vh;
+  min-width: 100%;
+  margin-left: -15px; /* To offset padding caused by Bootstrap container */
+  padding: 1rem;
+
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Start-button {
+  background-color: white;
+  border-color: black;
+  border-radius: 1rem;
+  border-style: solid;
+  border-width: 0.2rem;
+
+  min-width: 100%;
+  margin-left: 15px; /* To offset padding caused by Bootstrap container */
+
+  display: inline-block;
+  flex-direction: row;
 }
